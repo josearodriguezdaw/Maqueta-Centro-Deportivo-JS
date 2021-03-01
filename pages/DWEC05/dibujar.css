@@ -1,0 +1,73 @@
+input[type=color]{
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+	height: 30px;
+    width: 70px;
+}
+#dDibujar{
+	width: 50%;
+    margin: 0 auto;
+}
+
+#zonadibujo table{
+	border-collapse: inherit;
+	width: auto;
+    margin: 0 auto;
+}
+
+#zonadibujo td {
+	width: 10px;
+    height: 10px;
+    border: 1px solid grey;
+    padding: 0px;
+    margin: 1px;
+    float: left;
+    position: relative;
+}
+
+.tablerodibujo {
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	width: auto;
+	
+}
+.tablerodibujo td {
+	width: 10px;
+	height:10px;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#paleta {
+	margin-top: 15px;
+}
+#paleta td{
+	width: 35px;
+	height: 20px;
+}
+
+#pincel{
+	text-align: center;
+}
+
+.seleccionado{
+    border-color: #080808!important;
+    border: 2px solid;
+}
+
+caption {
+	text-align: left;
+}
+#dBorrar{
+	margin-top: 10px;
+    text-align: center;
+}

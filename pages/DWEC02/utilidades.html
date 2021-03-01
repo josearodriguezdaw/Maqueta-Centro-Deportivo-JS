@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+<head>
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8" />
+    <script src="../../js/standar.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/standar.css">
+    <link rel="stylesheet" href="../../css/materialize.min.css">
+    <link rel="stylesheet" href="../../css/icon.css">
+    
+    <script src="utilidades.js"></script>
+    <script>
+
+        window.onload = function () {
+            document.getElementById("btnIMC").addEventListener("click", function () {
+                var divIMC = document.getElementById("dIMC").innerHTML = calcularIMC();
+            });
+            document.getElementById("btnCategoria").addEventListener("click", function () {
+                var divIMC = document.getElementById("dCategoria").innerHTML = calcularCategoria();
+            });
+
+            document.getElementById("btnHorario").addEventListener("click", function () {
+                var divIMC = document.getElementById("dHorario").innerHTML = calcularHorario();
+            });
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+            <a href="../../index.html" class="brand-logo">Centro Deportivo JS</a>
+            <a id="mobileMenu" data-target="mobile-demo" href="javascript:void(0);" onclick="muestraMenu()"
+                class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="../../pages/DWEC02/utilidades.html">Utilidades</a></li>
+                <li><a href="../../pages/DWEC03/socios.html">Socios</a></li>
+                <li> <a href="../../pages/DWEC05/dibujar.html">Diseña tu escudo</a></li>
+                <li> <a href="../../pages/DWEC06/eventos.html">Competiciones</a></li>
+                <li> <a href="../../pages/DWEC07/registro.html">Registro</a></li>
+                <li> <a href="../../pages/DWEC08/encuesta.html">Encuesta</a></li>
+                <li> <a href="../../pages/DWEC09/noticias.html">Noticias</a></li>
+                <li> <a href="../../pages/DWEC10/gestion.html">Gestión</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="topnav">
+        <div id="myLinks">
+            <a href="../../pages/DWEC02/utilidades.html">Utilidades</a>
+            <a href="../../pages/DWEC03/socios.html">Socios</a>
+            <a href="../../pages/DWEC05/dibujar.html">Diseña tu escudo</a>
+            <a href="../../pages/DWEC06/eventos.html">Competiciones</a>
+            <a href="../../pages/DWEC07/registro.html">Registro</a>
+            <a href="../../pages/DWEC08/encuesta.html">Encuesta</a>
+            <a href="../../pages/DWEC09/noticias.html">Noticias</a>
+            <a href="../../pages/DWEC10/gestion.html">Gestión</a>
+        </div>
+    </div>
+    <div id="botonesAcciones">
+        <div>
+            <button id="btnIMC" class="btn">Calcular IMC</button>
+            <div id="dIMC"></div>
+        </div>
+        <div>
+            <button id="btnCategoria" class="btn">Calcular Categoría</button>
+            <div id="dCategoria"></div>
+
+        </div>
+        <div>
+            <button id="btnHorario" class="btn">Mostrar Horarios</button>
+            <div id="dHorario"></div>
+        </div>
+    </div>
+</body>
+
+</html>

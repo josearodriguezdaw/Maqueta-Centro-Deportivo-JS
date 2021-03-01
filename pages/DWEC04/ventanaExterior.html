@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script>
+        document.write("<center><h1>Bienvenido!</h1></center>");
+        document.write("<h3>Información de la página:</h3>");
+        document.write("<ul><li>Protocolo: "+ window.location.protocol +"</li></ul>");
+       
+        document.write("<h3>Información del navegador:</h3>");
+        document.write("<ul><li>Nombre del navegador: "+ window.navigator.appCodeName +"</li>");
+        var javaActivado =window.navigator.javaEnabled() ? "SI" : "NO";
+        document.write("<li>Java "+ javaActivado +" está activado</li>");
+        var cookies =window.navigator.cookieEnabled ? "SI" : "NO";
+        document.write("<li>Las cookies "+ cookies +" están activadas</li></ul>");    
+        
+        document.write("<h3>Información del usuario:</h3>");
+        var nombre = prompt("Introduzca su nombre: ");
+        var fechaNacimiento = prompt("Introduzca su fecha de nacimiento (dd/mm/yy)");
+        var dia =fechaNacimiento.split("/")[0];
+        var mes =fechaNacimiento.split("/")[1];
+        var anyo =fechaNacimiento.split("/")[2];
+        var fechaActual = new Date();
+
+        document.write("<ul><li>Hola: "+ nombre+"</li>");
+        document.write("<li>Tu nombre tiene "+ nombre.length +" caracteres incluidos espacios</li>");
+        document.write("<li>La última letra A de tu nombre está en la posición "+nombre.toLowerCase().lastIndexOf('a')+"</li>");     
+        document.write("<li>Tu nombre quitando las tres primeras letras es: "+nombre.substring(3)+"</li>");     
+        document.write("<li>Tu nombre en mayúsucla es: "+nombre.toUpperCase()+"</li>");           
+        document.write("<li>Tienes "+ (fechaActual.getFullYear()-anyo)+" años</li>"); 
+        var numeroSuerte  = Math.floor(Math.random()*100);
+        document.write("<li>Según nuestro oráculo tu número de la suerte es el: "+ numeroSuerte +"</li></ul>");     
+    
+
+ </script>
+</head>
+
+
+<body>
+
+</body>
+
+</html>

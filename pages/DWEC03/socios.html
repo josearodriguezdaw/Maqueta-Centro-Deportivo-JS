@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8" />
+    <script src="../../js/standar.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/standar.css">
+    <link rel="stylesheet" href="../../css/materialize.min.css">
+    <link rel="stylesheet" href="../../css/icon.css">
+
+    <script src="socios.js"></script>
+
+    <script>
+        window.onload = function () {
+            var socios = obtenerSocios();
+            document.getElementById("tablaInfo1").innerHTML = pintarInfoSocios(socios);
+
+            var sociosLocalidad = buscarPorLocalidad("mojácar");
+            document.getElementById("tablaInfo2").innerHTML = pintarInfoSocios(sociosLocalidad);
+
+            var socioDni = buscarPorDni("00000006T")
+            document.getElementById("tablaInfo3").innerHTML = pintarInfoSocios([socioDni]);
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+            <a href="../../index.html" class="brand-logo">Centro Deportivo JS</a>
+            <a id="mobileMenu" data-target="mobile-demo" href="javascript:void(0);" onclick="muestraMenu()"
+                class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="../../pages/DWEC02/utilidades.html">Utilidades</a></li>
+                <li><a href="../../pages/DWEC03/socios.html">Socios</a></li>
+                <li> <a href="../../pages/DWEC05/dibujar.html">Diseña tu escudo</a></li>
+                <li> <a href="../../pages/DWEC06/eventos.html">Competiciones</a></li>
+                <li> <a href="../../pages/DWEC07/registro.html">Registro</a></li>
+                <li> <a href="../../pages/DWEC08/encuesta.html">Encuesta</a></li>
+                <li> <a href="../../pages/DWEC09/noticias.html">Noticias</a></li>
+                <li> <a href="../../pages/DWEC10/gestion.html">Gestión</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="topnav">
+        <div id="myLinks">
+            <a href="../../pages/DWEC02/utilidades.html">Utilidades</a>
+            <a href="../../pages/DWEC03/socios.html">Socios</a>
+            <a href="../../pages/DWEC05/dibujar.html">Diseña tu escudo</a>
+            <a href="../../pages/DWEC06/eventos.html">Competiciones</a>
+            <a href="../../pages/DWEC07/registro.html">Registro</a>
+            <a href="../../pages/DWEC08/encuesta.html">Encuesta</a>
+            <a href="../../pages/DWEC09/noticias.html">Noticias</a>
+            <a href="../../pages/DWEC10/gestion.html">Gestión</a>
+        </div>
+    </div>
+    <div>
+        <h5 class="centrado">Listado de socios</h5>
+        <div id="tablaInfo1">
+
+        </div>
+    </div>
+    <div>
+        <h5 class="centrado">Socios que viven en Mojacar</h5>
+        <div id="tablaInfo2">
+
+        </div>
+    </div>
+    <div>
+        <h5 class="centrado">Datos del socio con DNI 00000006T</h5>
+        <div id="tablaInfo3">
+        </div>
+    </div>
+</body>
+
+</html>

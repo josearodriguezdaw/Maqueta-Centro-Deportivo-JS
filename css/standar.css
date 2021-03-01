@@ -1,0 +1,170 @@
+
+nav .brand-logo{
+  padding-left: 20px!important;
+}
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  div.scrollmenu a,  div.scrollmenu a:hover,div.scrollmenu a:active {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  div.scrollmenu a:hover {
+    background-color: #777;
+  }
+
+  div#botonesAcciones {
+    margin: 20px;
+  }
+  div#botonesAcciones > div {
+    margin-top: 10px;
+  }
+
+#tablaInfo1, #tablaInfo2, #tablaInfo3{
+  width: 50%;
+  margin: 0 auto;
+  
+}
+
+.centrado{
+  text-align: center;
+}
+
+#navbarDeportes{
+  margin-top: 15px;
+}
+a.active{
+  font-weight: bold;
+}
+
+.card-action-right {
+  float: right;
+}
+
+
+
+.card__date {
+  background: #08c;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 13px;
+  font-weight: bold;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+.card__date__day {
+  display: block;
+  font-size: 14px;
+}
+.card__date__month {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+div.card{
+  width: 50%;
+    margin: 0 auto;
+}
+
+.invisible{
+  display:none;
+}
+
+#tab1{
+  margin-bottom: 20px;
+}
+
+
+.cardDescripcion{
+  margin-top: 10px;
+}
+
+.card .card-content{
+  padding-bottom: 0px!important;
+}
+
+/**INICIO estilos: registro.HTML*/
+#formRegistro {
+    padding-left: 20%;
+    padding-right: 20%;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-field>label {
+    position: unset !important;
+    color: #585757 !important;
+}
+
+.row {
+    margin-bottom: 0px !important;
+}
+
+.input-field {
+    margin-bottom: unset !important;
+}
+
+.input-field .helper-text {
+    color: #F44336!important;
+}
+
+.topnav {
+    overflow: hidden;
+    color: #fff;
+    background-color: #ee6e73;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+/**FIN estilos: registro.HTML*/
+
+/**INICIO: encuesta.html*/
+#cuestionario{
+  margin-top: 15px;
+}
+.pregunta{
+  margin: 0 auto!important;
+  width: 70%;
+}
+.cardPregunta{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.collection .collection-item {
+
+  padding: 5px 5px 5px 30px!important;
+}
+
+.collection-header > h5{
+  margin: 0px!important;
+}
+#containerReenviar{
+  margin-left: 5%;
+}
+/**FIN: encuesta.html*/

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8" />
+    <script src="../../js/standar.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/standar.css">
+    <link rel="stylesheet" href="../../css/materialize.min.css">
+    <link rel="stylesheet" href="../../css/icon.css">
+
+    <script src="encuesta.js"></script>
+</head>
+
+<body>
+
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+            <a href="../../index.html" class="brand-logo">Centro Deportivo JS</a>
+            <a id="mobileMenu" data-target="mobile-demo" href="javascript:void(0);" onclick="muestraMenu()"
+                class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="../../pages/DWEC02/utilidades.html">Utilidades</a></li>
+                <li><a href="../../pages/DWEC03/socios.html">Socios</a></li>
+                <li> <a href="../../pages/DWEC05/dibujar.html">Diseña tu escudo</a></li>
+                <li> <a href="../../pages/DWEC06/eventos.html">Competiciones</a></li>
+                <li> <a href="../../pages/DWEC07/registro.html">Registro</a></li>
+                <li> <a href="../../pages/DWEC08/encuesta.html">Encuesta</a></li>
+                <li> <a href="../../pages/DWEC09/noticias.html">Noticias</a></li>
+                <li> <a href="../../pages/DWEC10/gestion.html">Gestión</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="topnav">
+        <div id="myLinks">
+            <a href="../../pages/DWEC02/utilidades.html">Utilidades</a>
+            <a href="../../pages/DWEC03/socios.html">Socios</a>
+            <a href="../../pages/DWEC05/dibujar.html">Diseña tu escudo</a>
+            <a href="../../pages/DWEC06/eventos.html">Competiciones</a>
+            <a href="../../pages/DWEC07/registro.html">Registro</a>
+            <a href="../../pages/DWEC08/encuesta.html">Encuesta</a>
+            <a href="../../pages/DWEC09/noticias.html">Noticias</a>
+            <a href="../../pages/DWEC10/gestion.html">Gestión</a>
+        </div>
+    </div>
+    <div id="titulo">
+        <h4 class="center">Encuesta sobre tus aficiones</h4>
+    </div>
+    <div class="row">
+        <div class="col s12" id="editarRespuestas">
+            <p id="txtRealizada"> Ya has realizado la encuesta, si lo deseas puedes volver a editar tus respuestas.</p>
+            <button id="btnEditar" type="button" class="btn waves-effect waves-light" onclick="editar();"> Editar Respuestas
+                <i class="material-icons right">edit</i></button>
+        </div>
+    </div>
+    <div id="cuestionario">
+        <form id="formCuestionario">
+            <div class="row " id="pregunta1">
+                <div class="col s12 cardPregunta">
+                    <ul class="collection with-header pregunta">
+                        <li class="collection-header">
+                            <h5>¿Qué deportes práticas?</h5>
+                        </li>
+                        <li class="collection-item">
+                            <label>
+                                <input type="checkbox" id="p1r1" name="p1r1" class="filled-in" />
+                                <span>Atletismo</span>
+                            </label>
+                        </li>
+                        <li class="collection-item">
+                            <label>
+                                <input type="checkbox" id="p1r2" name="p1r2" class="filled-in" />
+                                <span>Baloncesto</span>
+                            </label>
+                        </li>
+                        <li class="collection-item">
+                            <label>
+                                <input type="checkbox" id="p1r3" name="p1r3" class="filled-in" />
+                                <span>Pádel</span>
+                            </label>
+                        </li>
+                        <li class="collection-item">
+                            <label>
+                                <input type="checkbox" class="filled-in" name="p1r4" id="p1r4" />
+                                <span>Otros (Por favor especifique):</span>
+                                <textarea  class="materialize-textarea" name="p1r4_1" id="p1r4_1"
+                                    rows="2"></textarea>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" id="pregunta2">
+                <div class="col s12 cardPregunta">
+                    <ul class="collection with-header pregunta">
+                        <li class="collection-header">
+                            <h5>¿Cuantos días los praticas a la semana?</h5>
+                        </li>
+                        <li class="collection-item">
+                            <label>
+                                <input type="checkbox" id="p2r1" name="p2r1" class="filled-in" />
+                                <span>1 día</span>
+                            </label>
+                        </li>
+                        <li class="collection-item">
+                            <label>
+                                <input type="checkbox" id="p2r2" name="p2r2" class="filled-in" />
+                                <span>2 días</span>
+                            </label>
+                        </li>
+                        <li class="collection-item">
+                            <label>
+                                <input type="checkbox" id="p2r3" name="p2r3" class="filled-in" />
+                                <span>3 días</span>
+                            </label>
+                        </li>
+                        <li class="collection-item">
+                            <label>
+                                <input type="checkbox" class="filled-in" id="p2r4" name="p2r4" />
+                                <span>Otros (Por favor especifique):</span>
+                                <textarea class="materialize-textarea" id="p2r4_1" name="p2r4_1"
+                                    rows="2"></textarea>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" id="pregunta3">
+                <div class="col s12 cardPregunta">
+                    <ul class="collection with-header pregunta">
+                        <li class="collection-header">
+                            <h5>¿Cuántas horas práticas al día?</h5>
+                        </li>
+                        <li class="collection-item">
+                            <label>
+                                <input type="checkbox" id="p3r1" name="p3r1" class="filled-in" />
+                                <span>1 hora</span>
+                            </label>
+                        </li>
+                        <li class="collection-item">
+                            <label>
+                                <input type="checkbox" id="p3r2" name="p3r2" class="filled-in" />
+                                <span>2 horas</span>
+                            </label>
+                        </li>
+                        <li class="collection-item">
+                            <label>
+                                <input type="checkbox" id="p3r3" name="p3r3" class="filled-in" />
+                                <span>3 horas</span>
+                            </label>
+                        </li>
+                        <li class="collection-item">
+                            <label>
+                                <input type="checkbox" class="filled-in" id="p3r4" name="p3r4" />
+                                <span>Otros (Por favor especifique):</span>
+                                <textarea  class="materialize-textarea" id="p3r4_1" name="p3r4_1"
+                                    rows="2"></textarea>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" id="pregunta4">
+                <div class="col s12 cardPregunta">
+                    <ul class="collection with-header pregunta">
+                        <li class="collection-header">
+                            <h5>¿Tomas algún sumplemento para mejorar?</h5>
+                        </li>
+                        <li class="collection-item">
+                            <label>
+                                <input type="checkbox" id="p4r1" name="p4r1" class="filled-in" />
+                                <span>Sí</span>
+                            </label>
+                        </li>
+                        <li class="collection-item">
+                            <label>
+                                <input type="checkbox" id="p4r2" name="p4r2" class="filled-in" />
+                                <span>No</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" id="pregunta5">
+                <div class="col s12 cardPregunta">
+                    <ul class="collection with-header pregunta">
+                        <li class="collection-header">
+                            <h5>¿Cuál es tu bebida favorita al terminar un deporte?</h5>
+                        </li>
+                        <li class="collection-item">
+                            <label>
+                                <input type="checkbox" id="p5r1" name="p5r1" class="filled-in" />
+                                <span>Energy drink</span>
+                            </label>
+                        </li>
+                        <li class="collection-item">
+                            <label>
+                                <input type="checkbox" id="p5r2" name="p5r2" class="filled-in" />
+                                <span>Power aid</span>
+                            </label>
+                        </li>
+                        <li class="collection-item">
+                            <label>
+                                <input type="checkbox" id="p5r3" name="p5r3" class="filled-in" />
+                                <span>Agua</span>
+                            </label>
+                        </li>
+                        <li class="collection-item">
+                            <label>
+                                <input type="checkbox" class="filled-in" name="p5r4" id="p5r4" />
+                                <span>Otros (Por favor especifique):</span>
+                                <textarea class="materialize-textarea" name="p5r4_1" id="p5r4_1"
+                                    rows="2"></textarea>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" id="botonera">
+                <div class="col s12 cardPregunta">
+                    <center> <button type="button" class="btn waves-effect waves-light" onclick="enviar();"
+                            id="btnBorrar">Enviar
+                            <i class="material-icons right">send</i>
+                        </button></center>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

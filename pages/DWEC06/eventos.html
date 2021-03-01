@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8" />
+    <script src="../../js/standar.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/standar.css">
+    <link rel="stylesheet" href="../../css/materialize.min.css">
+    <link rel="stylesheet" href="../../css/icon.css">
+
+    <script src="eventos.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+            <a href="../../index.html" class="brand-logo">Centro Deportivo JS</a>
+            <a id="mobileMenu" data-target="mobile-demo" href="javascript:void(0);" onclick="muestraMenu()"
+                class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="../../pages/DWEC02/utilidades.html">Utilidades</a></li>
+                <li><a href="../../pages/DWEC03/socios.html">Socios</a></li>
+                <li> <a href="../../pages/DWEC05/dibujar.html">Diseña tu escudo</a></li>
+                <li> <a href="../../pages/DWEC06/eventos.html">Competiciones</a></li>
+                <li> <a href="../../pages/DWEC07/registro.html">Registro</a></li>
+                <li> <a href="../../pages/DWEC08/encuesta.html">Encuesta</a></li>
+                <li> <a href="../../pages/DWEC09/noticias.html">Noticias</a></li>
+                <li> <a href="../../pages/DWEC10/gestion.html">Gestión</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="topnav">
+        <div id="myLinks">
+            <a href="../../pages/DWEC02/utilidades.html">Utilidades</a>
+            <a href="../../pages/DWEC03/socios.html">Socios</a>
+            <a href="../../pages/DWEC05/dibujar.html">Diseña tu escudo</a>
+            <a href="../../pages/DWEC06/eventos.html">Competiciones</a>
+            <a href="../../pages/DWEC07/registro.html">Registro</a>
+            <a href="../../pages/DWEC08/encuesta.html">Encuesta</a>
+            <a href="../../pages/DWEC09/noticias.html">Noticias</a>
+            <a href="../../pages/DWEC10/gestion.html">Gestión</a>
+        </div>
+    </div>
+
+    <div class="row" id="navbarDeportes">
+        <div id="tab1" class="col s12">
+            <ul class="tabs tab-demo z-depth-1">
+                <li class="tab col s3"><a class="active" name="#test1" href="#test1">Atletismo</a></li>
+                <li class="tab col s3"><a href="#test2" name="#test2">Baloncesto</a></li>
+                <li class="tab col s3 "><a href="#test3" name="#test3">Balonmano</a></li>
+                <li class="tab col s3"><a href="#test4" name="#test4">Pádel</a></li>
+            </ul>
+        </div>
+        <div id="test1" class="col s12">
+            <center>
+                <h5>Próximos eventos de Atletismo</h5>
+            </center>
+            <div class="row">
+                <div class="col s12">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <div class="row">
+                                <div class="col s12 m2">
+                                    <div class="card__date">
+                                        <span class="card__date__day">23</span>
+                                        <span class="card__date__month">Mayo</span>
+                                    </div>
+                                </div>
+                                <div class="col s12 m10"> <span class="card-title">Cto de España de Fondo en
+                                        pista.</span>
+
+                                </div>
+                                <div class="col s12 cardDescripcion">
+                                    <p>Campeonato de España en pista al aire libre.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Ir a web</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="test2" class="col s12 invisible">
+            <center>
+                <h5>Próximos eventos de Baloncesto</h5>
+            </center>
+            <div class="row">
+                <div class="col s12">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <div class="row">
+                                <div class="col s12 m2">
+                                    <div class="card__date">
+                                        <span class="card__date__day">3</span>
+                                        <span class="card__date__month">Mayo</span>
+                                    </div>
+                                </div>
+                                <div class="col s12 m10"> <span class="card-title">Cto de España Clubes Junior
+                                        Masculino</span>
+
+                                </div>
+                                <div class="col s12 cardDescripcion">
+                                    <p>Campeonato de España de la categoría Junior Masculino que se disputará en
+                                        Valencia.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Ir a web</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="test3" class="col s12 invisible">
+            <center>
+                <h5>Próximos eventos de Balonmano</h5>
+            </center>
+            <div class="row">
+                <div class="col s12">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <div class="row">
+                                <div class="col s12 m2">
+                                    <div class="card__date">
+                                        <span class="card__date__day">16</span>
+                                        <span class="card__date__month">Marzo</span>
+                                    </div>
+                                </div>
+                                <div class="col s12 m10"> <span class="card-title">V Torneo Internacional “Ciudad de
+                                        Sevilla”</span>
+                                </div>
+                                <div class="col s12 cardDescripcion">
+                                    <p>Quinta edición del Torneo Internacional “Ciudad de Sevilla” en el que en años
+                                        anteriores
+                                        han formado parte del cartel equipos internacionales de Italia, Túnez, Portugal
+                                        y
+                                        nacionales de prestigio como el FC Barcelona con su sección de Balonmano.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Ir a web</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="test4" class="col s12 invisible">
+            <center>
+                <h5>Próximos eventos de Pádel</h5>
+            </center>
+            <div class="row">
+                <div class="col s12">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <div class="row">
+                                <div class="col s12 m2">
+                                    <div class="card__date">
+                                        <span class="card__date__day">5</span>
+                                        <span class="card__date__month">Julio</span>
+                                    </div>
+                                </div>
+                                <div class="col s12 m10"> <span class="card-title">Torneo MontePio</span>
+                                </div>
+                                <div class="col s12 cardDescripcion">
+                                    <p>Torneo de padel TORNEO MONTEPIO en BOX PADEL GRANADA del 5 al 7 de julio</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Ir a web</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
